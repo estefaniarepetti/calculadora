@@ -1,8 +1,6 @@
 # calculadora IMC
 ## Creada con JavaScript 
 
-![Web:](img/caculadora.jpg)
-
 ![Web:](https://github.com/estefaniarepetti/calculadora/blob/main/img/calculadora.jpg)
 
 ## Gestor de Paquetes
