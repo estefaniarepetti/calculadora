@@ -6,12 +6,11 @@ function calcularIMC() {
   const peso = parseFloat(inputPeso.value);
   const alturaEnCm = parseFloat(inputAltura.value);
 
-  // Convertir altura de cm a m
-  const alturaEnMetros = alturaEnCm / 100; // Divide por 100 para obtener el valor en metros
+  const alturaEnMetros = alturaEnCm / 100;  
 
   if (isNaN(peso) || isNaN(alturaEnCm)) {
     divResultado.textContent = "Ingresa valores válidos en los campos de peso y altura.";
-    return; // Detener la ejecución del cálculo del IMC si faltan valores válidos
+    return; 
   }
 
   const imc = peso / (alturaEnMetros * alturaEnMetros);
