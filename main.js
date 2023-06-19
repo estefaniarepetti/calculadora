@@ -2,14 +2,16 @@ const inputPeso = document.getElementById("txtPeso");
 const inputAltura = document.getElementById("txtAltura");
 const divResultado = document.getElementById("resultado");
 
+
 function calcularIMC() {
   const peso = parseFloat(inputPeso.value);
-  const altura = parseFloat(inputAltura.value);
+  const altura = parseFloat(inputAltura.value.replace(',', '.')); // Reemplazar la coma decimal por un punto decimal
 
   if (isNaN(peso) || isNaN(altura)) {
     divResultado.textContent = "Ingresa valores válidos en los campos de peso y altura.";
     return; // Detener la ejecución del cálculo del IMC si faltan valores válidos
   }
+
 
   const imc = peso / (altura * altura);
 
