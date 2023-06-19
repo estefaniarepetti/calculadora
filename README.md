@@ -4,8 +4,8 @@
 ![Web:](https://github.com/estefaniarepetti/calculadora/blob/main/img/calculadora.jpg)
 
 ## Librerias y frameworks 
--Bootstrap 
--jQuery  
+- Bootstrap 
+- jQuery  
 
 ## Gestor de Paquetes
 - npm
