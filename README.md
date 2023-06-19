@@ -3,6 +3,8 @@
 
 ![Web:](img/caculadora.jpg)
 
+![Web:]([https://url/de/la/imagen.jpg](https://github.com/estefaniarepetti/calculadora/blob/main/img/calculadora.jpg)) 
+
 ## Gestor de Paquetes
 - npm
 
