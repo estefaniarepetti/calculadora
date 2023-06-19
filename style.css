@@ -1,0 +1,211 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+  background-image: url("./img/imgFondo.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+} 
+
+.titulos{
+    padding: 30px;
+    justify-content: center;
+    text-align: center;
+    color:#000;
+  
+}
+.subtitulo{
+  font-size: 15px;
+color: #000;
+}
+.info{
+    margin-bottom: 20px;
+    border: 1px solid #536dab;
+    border-radius: 5px;
+    min-height: 10px;
+    text-align: left;
+  
+}
+
+.info-detail{
+  padding: 20px;
+  font-family:sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.4;
+  color: #000;
+  margin-bottom: 40px;
+}
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+    opacity: 90%;
+
+  }
+
+
+
+  @media (max-width: 600px) {
+    .container{
+      grid-template-columns: 1fr;
+  }
+}
+
+
+  .item1{
+      display: flex;
+      align-items: center;
+      border: 1px solid #000;
+      border-radius: 25px;
+      width: 80%;
+      justify-content: space-evenly;
+      background-color: rgba(255, 255, 255, 0.2);
+      -webkit-backdrop-filter: blur(7px);
+      backdrop-filter: blur(7px);
+  }
+
+  @media (max-width: 600px) {
+    .item1{
+      justify-content:none;
+    
+  }
+}
+
+.gen{
+  display:flex;
+  flex-direction: column;
+  margin-right:100px; 
+}
+@media (max-width: 600px) {
+  .gen{
+    margin-right: 10px;
+  
+}
+}
+
+
+  .icon-svg {
+    width: 72px;
+    height: 72px;
+}
+  
+  .item {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 25px;
+    width: 80%;
+    background-color: rgba(255, 255, 255, 0.2);
+    -webkit-backdrop-filter: blur(7px);
+    backdrop-filter: blur(7px);
+  }
+
+  .itemDos{
+    display: flex;
+    justify-content: center;
+    padding:5px;
+  }
+
+.form-control1{
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  height: 40px;
+  line-height: 40px;
+  max-height: initial;
+  padding: 0 10px;
+  background-color: #eff0e6;
+  border: 1px solid #cbcbcb;
+  outline: initial;
+  font-family: Roboto,sans-serif;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  transition: .5s;
+ 
+}
+
+.form-control1:focus{
+  border-color:dodgerBlue;
+  box-shadow:0 0 8px 0 dodgerBlue;
+}
+
+
+.genero{
+  padding: 15px;
+}
+label{
+  padding: 10px;
+  font-family: 'Anton', sans-serif;
+}
+
+  /*boton */ 
+
+  .end{
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    
+  }
+  #resultado{
+    font-family: 'Anton', sans-serif;
+    padding: 10px;
+  
+
+  }
+
+ 
+
+  .custom-btn {
+    width: 300px;
+    height: 45px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+  }
+  .btn-10 {
+    background: rgb(22,9,240);
+  background: linear-gradient(0deg, rgba(22,9,240,1) 0%, rgba(49,110,244,1) 100%);
+    color: #fff;
+    border: none;
+    transition: all 0.3s ease;
+    overflow: hidden;
+  }
+  .btn-10:after {
+    position: absolute;
+    content: " ";
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s ease;
+    -webkit-transform: scale(.1);
+    transform: scale(.1);
+  }
+  .btn-10:hover {
+    color: #fff;
+    border: none;
+    background: transparent;
+  }
+  .btn-10:hover:after {
+    background: rgb(0,3,255);
+  background: linear-gradient(0deg, rgba(2,126,251,1) 0%,  rgba(0,3,255,1)100%);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
