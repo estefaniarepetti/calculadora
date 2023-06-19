@@ -2,18 +2,19 @@ const inputPeso = document.getElementById("txtPeso");
 const inputAltura = document.getElementById("txtAltura");
 const divResultado = document.getElementById("resultado");
 
-
 function calcularIMC() {
   const peso = parseFloat(inputPeso.value);
-  const altura = parseFloat(inputAltura.value.replace(',', '.')); // Reemplazar la coma decimal por un punto decimal
+  const alturaEnCm = parseFloat(inputAltura.value);
 
-  if (isNaN(peso) || isNaN(altura)) {
+  // Convertir altura de cm a m
+  const alturaEnMetros = alturaEnCm / 100; // Divide por 100 para obtener el valor en metros
+
+  if (isNaN(peso) || isNaN(alturaEnCm)) {
     divResultado.textContent = "Ingresa valores válidos en los campos de peso y altura.";
     return; // Detener la ejecución del cálculo del IMC si faltan valores válidos
   }
 
-
-  const imc = peso / (altura * altura);
+  const imc = peso / (alturaEnMetros * alturaEnMetros);
 
   if (imc >= 0.0 && imc <= 22.0) {
     divResultado.textContent = "IMC: " + imc.toFixed(2) + " - Bajo peso";
@@ -30,6 +31,3 @@ function calcularIMC() {
 
 const btnCalcular = document.getElementById("btnCalcular");
 btnCalcular.addEventListener("click", calcularIMC);
-
-
-
